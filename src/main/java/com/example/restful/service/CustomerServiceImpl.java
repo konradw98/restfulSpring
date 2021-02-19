@@ -2,9 +2,11 @@ package com.example.restful.service;
 
 import com.example.restful.domain.Customer;
 import com.example.restful.repositories.CustomerRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CustomerServiceImpl implements CustomerService {
 
     private final CustomerRepository customerRepository;
@@ -19,7 +21,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public List<Customer> findAllCustomer() {
+    public List<Customer> findAllCustomers() {
         return customerRepository.findAll();
     }
 }

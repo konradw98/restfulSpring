@@ -8,6 +8,6 @@ public interface CustomerService {
 
     Customer findCustomerById(Long id);
 
-    List<Customer>  findAllCustomer();
+    List<Customer>  findAllCustomers();
 
 }
